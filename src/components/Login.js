@@ -118,14 +118,14 @@ const Login = () => {
           />
         )}
         <input
-          value="goraisusanta2018@gmail.com"
+          // value="goraisusanta2018@gmail.com"
           ref={email}
           className="p-3 m-2  border-white border-[1px] rounded-sm w-[90%]"
           type="text"
           placeholder="Email Address"
         />
         <input
-          value="Susanta@2001"
+          // value="Susanta@2001"
           ref={password}
           className="p-3 m-2  border-white border-[1px] rounded-sm w-[90%]   "
           type="text"

@@ -13,21 +13,21 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/Susanta-0007/netflix-clone/total) ![Contributors](https://img.shields.io/github/contributors/Susanta-0007/netflix-clone?color=dark-green) ![Forks](https://img.shields.io/github/forks/Susanta-0007/netflix-clone?style=social) ![Stargazers](https://img.shields.io/github/stars/Susanta-0007/netflix-clone?style=social) ![Issues](https://img.shields.io/github/issues/Susanta-0007/netflix-clone) ![License](https://img.shields.io/github/license/Susanta-0007/netflix-clone) 
+![Downloads](https://img.shields.io/github/downloads/Susanta-0007/netflix-clone/total) ![Contributors](https://img.shields.io/github/contributors/Susanta-0007/netflix-clone?color=dark-green) ![Forks](https://img.shields.io/github/forks/Susanta-0007/netflix-clone?style=social) ![Stargazers](https://img.shields.io/github/stars/Susanta-0007/netflix-clone?style=social) ![Issues](https://img.shields.io/github/issues/Susanta-0007/netflix-clone) ![License](https://img.shields.io/github/license/Susanta-0007/netflix-clone)
 
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
+- [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
@@ -39,14 +39,13 @@ The project utilizes a tech stack featuring React.js, Tailwind CSS, and Redux to
 
 👨🏻‍💻Tech Stack Used :
 🌟 Frontend : React and Tailwind
-🌟 State Management : Redux 
+🌟 State Management : Redux
 🌟 API - TMDB API
 
-
-* [React Js](https://legacy.reactjs.org/ta)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Redux ](https://redux.js.org/)
-* [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
+- [React Js](https://legacy.reactjs.org/ta)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Redux ](https://redux.js.org/)
+- [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
 
 ## Getting Started
 
@@ -57,7 +56,7 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 
-* npm
+- npm
 
 ```sh
 npm install npm@latest -g
@@ -146,10 +145,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Susanta-0007/netflix-clone/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
-* Please make sure you check your spelling and grammar.
-* Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/Susanta-0007/netflix-clone/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Susanta-0007/netflix-clone/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
+- Please make sure you check your spelling and grammar.
+- Create individual PR for each suggestion.
+- Please also read through the [Code Of Conduct](https://github.com/Susanta-0007/netflix-clone/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
@@ -165,6 +165,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Susanta-0007
 
 ## Authors
 
-* **Susanta Gorai** - *Full Stack Developer* - [Susanta Gorai](https://github.com/Susanta-0007) - *Building from scratch*
-
- 
+- **Susanta Gorai** - _Full Stack Developer_ - [Susanta Gorai](https://github.com/Susanta-0007) - _Building from scratch_
