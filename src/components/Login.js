@@ -18,7 +18,7 @@ const Login = () => {
 
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [isGuest,setIsGuest]=useState("hidden");
+  const [isGuest, setIsGuest] = useState(false);
 
   const name = useRef(null);
   const email = useRef(null);
@@ -93,7 +93,7 @@ const Login = () => {
   };
 
   const handleGuest = () => {
-    setIsGuest("");
+    setIsGuest(!isGuest);
   };
 
   return (
@@ -160,12 +160,13 @@ const Login = () => {
             {" "}
             Guest
           </p>
-          
+
         </div>
-        <div className={`text-red-400 ${isGuest}`}>
-            <p>Username: testapp@gmail.com</p>
-            <p>Password: Test@123</p>
-          </div>
+        <div className={`text-red-400 ${isGuest ? "hidden" : ""}`}>
+          <p>Username: testapp@gmail.com</p>
+          <p>Password: Test@123</p>
+        </div>
+
       </form>
     </div>
   );
