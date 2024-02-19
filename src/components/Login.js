@@ -14,10 +14,11 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [isGuest,setIsGuest]=useState("hidden");
 
   const name = useRef(null);
   const email = useRef(null);
@@ -81,7 +82,7 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           // console.log(user);
-          navigate("/browse")
+          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -89,6 +90,10 @@ const Login = () => {
           setErrorMessage(errorCode + " " + errorMessage);
         });
     }
+  };
+
+  const handleGuest = () => {
+    setIsGuest("");
   };
 
   return (
@@ -118,14 +123,12 @@ const Login = () => {
           />
         )}
         <input
-          // value="goraisusanta2018@gmail.com"
           ref={email}
           className="p-3 m-2  border-white border-[1px] rounded-sm w-[90%]"
           type="text"
           placeholder="Email Address"
         />
         <input
-          // value="Susanta@2001"
           ref={password}
           className="p-3 m-2  border-white border-[1px] rounded-sm w-[90%]   "
           type="text"
@@ -139,16 +142,30 @@ const Login = () => {
           {isSignInForm ? "Login" : "Sign Up"}
         </button>
 
-        <p className="text-gray-500 font-semibold m-2 ">
-          {isSignInForm ? "New to Netflix ?" : "Already have an account ?"}
-          <span
-            className="text-white cursor-pointer"
-            onClick={() => toggleSignIn()}
+        <div className="flex gap-5 items-center">
+          <p className="text-gray-500 font-semibold m-2 ">
+            {isSignInForm ? "New to Netflix ?" : "Already have an account ?"}
+            <span
+              className="text-white cursor-pointer pX-5"
+              onClick={() => toggleSignIn()}
+            >
+              {" "}
+              {isSignInForm ? "Sign Up now" : "Sign In now"}
+            </span>
+          </p>
+          <p
+            onClick={() => handleGuest()}
+            className="text-red-500 cursor-pointer"
           >
             {" "}
-            {isSignInForm ? "Sign Up now" : "Sign In now"}
-          </span>
-        </p>
+            Guest
+          </p>
+          
+        </div>
+        <div className={`text-red-400 ${isGuest}`}>
+            <p>Username: testapp@gmail.com</p>
+            <p>Password: Test@123</p>
+          </div>
       </form>
     </div>
   );
